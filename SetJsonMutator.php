@@ -56,8 +56,6 @@ trait SetJsonMutator
      */
     protected function getJsonValue($key, $value)
     {
-        // Check for presence of JSON mutator (ex. the mutator for 'price->msrp'
-        // would be SetPriceMsrpAttribute). If mutator exists, return 
         if ($jsonKey = $this->hasJsonSetMutator($key)) {
             $value = $this->setMutatedAttributeValue($jsonKey, $value);
         }
