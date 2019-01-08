@@ -1,5 +1,5 @@
 # laravel-json-column-mutators-trait
-Extends Laravel's HasAttributes Trait to enable nested attribute mutators for JSON cast columns
+Extends Laravel's HasAttributes Trait to enable nested attribute Mutators for JSON cast columns. Out of the box, Laravel does not support Mutators on JSON columns.
 
 ## Usage
 1. Copy into App\Traits, and declare `use SetJsonMutator;` within the Model that is using JSON columns
